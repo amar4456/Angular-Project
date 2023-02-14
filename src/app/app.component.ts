@@ -9,6 +9,8 @@ import {MenuItem} from 'primeng/api';
 export class AppComponent { 
     items: MenuItem[] = [];
 
+    gfg: any;
+
     ngOnInit() {
         this.items = [
             {

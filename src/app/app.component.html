@@ -1,1 +1,25 @@
-<p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+<h4>This is AK</h4>
+
+<p-sidebar [(visible)]="gfg" [baseZIndex]="10000">
+    <h1 style="font-weight: normal">GeeksforGeeks</h1>
+      
+  <p>Angular PrimeNG Sidebar Component</p>
+
+  <p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+    
+    <p-button
+      type="button"
+      (click)="gfg = false"
+      label="OK"
+      styleClass="p-button-info">
+    </p-button>
+    <p-button
+      type="button"
+      (click)="gfg = false"
+      label="Cancel"
+      styleClass="p-button-danger">
+    </p-button>
+  </p-sidebar>
+  <p-button (click)="gfg = true"
+            label="Open Sidebar!">
+  </p-button>
