@@ -8,6 +8,8 @@ import { AppComponent }   from './app.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { ButtonModule } from "primeng/button";
 import { SidebarModule } from "primeng/sidebar";
+import { FormsModule } from "@angular/forms";
+import { CalendarModule } from "primeng/calendar";
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { SidebarModule } from "primeng/sidebar";
     BrowserAnimationsModule,
     PanelMenuModule,
     ButtonModule,
-    SidebarModule
+    SidebarModule,
+    CalendarModule,
+    FormsModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]

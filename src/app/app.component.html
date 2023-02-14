@@ -23,3 +23,34 @@
   <p-button (click)="gfg = true"
             label="Open Sidebar!">
   </p-button>
+
+  <!-- Calander -->
+  <!-- <h2>AK</h2>
+<h4>Disable Months</h4>
+<p-calendar [inline]="true" [showWeek]="true"></p-calendar> -->
+
+<div class="p-field p-col-12 p-md-4">
+  <label for="disabledays">Disable Days</label><br>
+  <p-calendar [(ngModel)]="date5" [disabledDates]="invalidDates" [disabledDays]="[0,6]" [readonlyInput]="true" inputId="disabledays"></p-calendar>
+  <!-- <p-calendar [(ngModel)]="selectedDate" [disabledDates]="disableMarch"></p-calendar> -->
+</div>
+
+<h2 style="color: green">AK</h2>
+<h4>Angular PrimeNG Form Calendar Disable 
+  specific dates and/or days Component</h4>
+
+<p-calendar 
+  [(ngModel)]="calendarVal" 
+  [disabledDates]="disabledDatesArr" 
+  [readonlyInput]="true">
+</p-calendar>
+
+<h2 style="color: green">AK</h2>
+<h4>Angular PrimeNG Form Calendar Enable 
+  specific Date Range</h4>
+
+<!-- <p-calendar [(ngModel)]="value" tabindex="0" [maxDate]="maxDateValue" 
+  [minDate]="minDateValue" readonlyInput="true" maxDateValue
+  (onMonthChange)="onMonthChange($event)">
+</p-calendar> -->
+<p-calendar [(ngModel)]="selectedDate" [minDate]="minDate" [maxDate]="maxDate"></p-calendar>

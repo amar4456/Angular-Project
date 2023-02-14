@@ -11,6 +11,20 @@ export class AppComponent {
 
     gfg: any;
 
+    date5!: Date;
+    invalidDates: Array<Date> = [];
+    
+    selectedDate!: Date;
+
+    calendarVal?: Date;
+    disabledDatesArr = [
+        new Date("2/14/2023"), 
+        new Date("2/16/2023")
+    ];
+
+    minDate = new Date("2/7/2023");
+    maxDate = new Date("2/14/2023");
+
     ngOnInit() {
         this.items = [
             {
