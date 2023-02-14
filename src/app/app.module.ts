@@ -10,6 +10,8 @@ import { ButtonModule } from "primeng/button";
 import { SidebarModule } from "primeng/sidebar";
 import { FormsModule } from "@angular/forms";
 import { CalendarModule } from "primeng/calendar";
+import {MenubarModule} from 'primeng/menubar';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   imports: [
@@ -19,7 +21,9 @@ import { CalendarModule } from "primeng/calendar";
     ButtonModule,
     SidebarModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    MenubarModule,
+    InputTextModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]

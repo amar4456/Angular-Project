@@ -1,7 +1,14 @@
+<p-menubar [model]="items1">
+  <div>
+      <input type="text" pInputText placeholder="Search">
+      <button type="button" pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>&nbsp;<p-button (click)="gfg = true" label="Open Sidebar!"></p-button>
+  </div>
+</p-menubar>
+
 <h4>This is AK</h4>
 
 <p-sidebar [(visible)]="gfg" [baseZIndex]="10000">
-    <h1 style="font-weight: normal">GeeksforGeeks</h1>
+    <h1 style="font-weight: normal">AK</h1>
       
   <p>Angular PrimeNG Sidebar Component</p>
 
@@ -20,9 +27,7 @@
       styleClass="p-button-danger">
     </p-button>
   </p-sidebar>
-  <p-button (click)="gfg = true"
-            label="Open Sidebar!">
-  </p-button>
+  
 
   <!-- Calander -->
   <!-- <h2>AK</h2>
