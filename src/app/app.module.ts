@@ -12,6 +12,8 @@ import { FormsModule } from "@angular/forms";
 import { CalendarModule } from "primeng/calendar";
 import {MenubarModule} from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import { InputTextModule } from 'primeng/inputtext';
     CalendarModule,
     FormsModule,
     MenubarModule,
-    InputTextModule
+    InputTextModule,
+    DropdownModule,
+    ReactiveFormsModule
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]

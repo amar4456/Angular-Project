@@ -1,31 +1,63 @@
 import { Component } from '@angular/core';
 import {MenuItem} from 'primeng/api';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent { 
-    items: MenuItem[] = [];
-
+    // Sidebar
     gfg: any;
 
+    // Disable Days
     date5!: Date;
     invalidDates: Array<Date> = [];
     
-    selectedDate!: Date;
-
+    // Disable specific dates and/or days Component
     calendarVal?: Date;
     disabledDatesArr = [
         new Date("2/14/2023"), 
         new Date("2/16/2023")
     ];
 
+    // Calendar Enable specific Date Range
+    selectedDate!: Date;
     minDate = new Date("2/7/2023");
     maxDate = new Date("2/14/2023");
 
+    // AK Multi Restriction Based on Input
+    selectedYear!: any;
+
+    years = ["A","B"]
+
+    disabledDates = [
+        new Date("2/14/2023"), 
+        new Date("2/16/2023")
+    ];
+
+    minDate1: any
+    maxDate1: any
+
+    onClick() {
+        if (this.selectedYear == 'A') {
+            alert("2022")
+            this.minDate1 = new Date("2/1/2022");
+            this.maxDate1 = new Date("3/30/2022");        
+        } else  if (this.selectedYear == 'B') {
+            alert("2023")
+            this.minDate1 = new Date("2/1/2023");
+            this.maxDate1 = new Date("3/30/2023"); 
+        }
+      }
+      
+      
+
+
+    // menubar
     items1: MenuItem[] = [];
+    
+    //
+    items: MenuItem[] = [];
 
     ngOnInit() {
         this.items = [
@@ -60,6 +92,7 @@ export class AppComponent {
             
         ]
 
+        // menubar
         this.items1 = [
             {
                 label:'File',

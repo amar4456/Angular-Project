@@ -34,12 +34,14 @@
 <h4>Disable Months</h4>
 <p-calendar [inline]="true" [showWeek]="true"></p-calendar> -->
 
+<!-- Disable Days -->
 <div class="p-field p-col-12 p-md-4">
   <label for="disabledays">Disable Days</label><br>
   <p-calendar [(ngModel)]="date5" [disabledDates]="invalidDates" [disabledDays]="[0,6]" [readonlyInput]="true" inputId="disabledays"></p-calendar>
   <!-- <p-calendar [(ngModel)]="selectedDate" [disabledDates]="disableMarch"></p-calendar> -->
 </div>
 
+<!-- Disable specific dates and/or days Component -->
 <h2 style="color: green">AK</h2>
 <h4>Angular PrimeNG Form Calendar Disable 
   specific dates and/or days Component</h4>
@@ -50,6 +52,7 @@
   [readonlyInput]="true">
 </p-calendar>
 
+<!-- Calendar Enable specific Date Range -->
 <h2 style="color: green">AK</h2>
 <h4>Angular PrimeNG Form Calendar Enable 
   specific Date Range</h4>
@@ -59,3 +62,11 @@
   (onMonthChange)="onMonthChange($event)">
 </p-calendar> -->
 <p-calendar [(ngModel)]="selectedDate" [minDate]="minDate" [maxDate]="maxDate"></p-calendar>
+
+<!-- AK Multi Restriction Based on Input -->
+<h2 style="color: red">Multi Restriction Based on Selection</h2>
+<h4>Angular PrimeNG Form Calendar Enable 
+  specific Date Range</h4>
+
+<p-dropdown [options]="years" [(ngModel)]="selectedYear" (onChange)="onClick()"></p-dropdown>&nbsp;
+<p-calendar  [minDate]="minDate1" [maxDate]="maxDate1"></p-calendar>
