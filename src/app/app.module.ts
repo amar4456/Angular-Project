@@ -14,6 +14,7 @@ import {MenubarModule} from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import {DropdownModule} from 'primeng/dropdown';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DropdownModule,
     ReactiveFormsModule
   ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, ChartComponent ],
   bootstrap:    [ AppComponent ]
 })
 

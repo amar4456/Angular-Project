@@ -1,0 +1,1 @@
+npm run -- ng generate component chart --module app
